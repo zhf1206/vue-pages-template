@@ -1,8 +1,8 @@
 {
-  "name": "youyu-uyu",
+  "name": "vue-pages-template",
   "version": "1.0.0",
-  "description": "游鱼uyu",
-  "author": "chengyuanyuan",
+  "description": "vue pages template",
+  "author": "zeke",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
