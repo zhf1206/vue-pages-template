@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html id="gyl_html">
+  <head>
+    <meta charset="UTF-8">
+    <title>根源链商城</title>
+    <meta name="keywords" content=""/>
+    <meta name="referrer" content="never">
+    <meta name="description" content="" />
+    <meta name='viewport' content='width=375,user-scalable=no,target-densitydpi=device-dpi,initial-scale=1.0,minimum-scale=1,maximum-scale=1'>
+    <meta name = "format-detection" content = "telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-tap-highlight" content="no">
+    <script type="text/javascript">
+      var loginCallback = function(json){
+        if(typeof json == 'string') json = JSON.parse(json);
+        localStorage.setItem('userInfo',JSON.stringify(json.userInfo));
+        if(json.backUrl) location.href = json.backUrl;
+      }
+      var loginoutCallback = function(json){
+        localStorage.removeItem('userInfo');
+        if(json.backUrl) location.href = json.backUrl;
+      }
+      var payResult = function(json){
+        if(typeof json == 'string') json = JSON.parse(json);
+        if(json.result == 'success'){
+          location.href = '/hi/views/paymentSuccess.html?orderNo='+json.orderNo;
+        }else{
+          location.href = '/hi/views/paymentFail.html?orderNo='+json.orderNo;
+        }
+      }
+    </script>
+    <!--script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script-->
+  </head>
+  <body id="gyl_body" class="gylapp">
+    <div id="app"></div>
+  </body>
+</html>

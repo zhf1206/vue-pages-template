@@ -1,0 +1,49 @@
+{
+  "queryMtxOrderDetail": {
+    "data": {
+      "result": [{
+        "adultNum": 0,
+        "airport": "PEK",
+        "airportName": "北京首都国际机场",
+        "baggagePrice": 0.00,
+        "carLocation": "五环内",
+        "carTime": 1514626200000,
+        "childNum": 0,
+        "cityCode": "BJS",
+        "cityName": "北京",
+        "code": "CA1857",
+        "contactPhone": "13552261300",
+        "contactor": "张海",
+        "createTime": 1512614249000,
+        "dptTime": 1514633400000,
+        "flightOrderCustomers": [],
+        "goBack": 1,
+        "id": 715,
+        "insurancePrice": 0.00,
+        "integralCount": 4600,
+        "integralPrice": 46.00,
+        "isInsurance": 0,
+        "isTransfer": 1,
+        "itemNum": 1,
+        "needPayPrice": 0.00,
+        "orderNo": "SQA201712071023811",
+        "orderStatus": 300,
+        "orderSubNo": "SQA201712071023811_1",
+        "price": 46,
+        "productType": "8",
+        "refOrderNo": "",
+        "remark": "",
+        "servId": 2,
+        "servName": "乐拼接送机",
+        "showStatusName": "待确认",
+        "terminal": "T3",
+        "totalPrice": 46.00
+      }]
+    },
+    "systemDate": 1513049714208,
+    "status": {
+      "code": 0
+    }
+  },
+  "other": {}
+}
