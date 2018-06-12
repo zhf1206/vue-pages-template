@@ -1,5 +1,5 @@
-# vue-single-page-temp
-这是一个单页面vue项目开发框架
+# vue-pages-template
+这是一个多页面vue项目开发框架
 
 ### 修改不同服务地址
 #### 文件：config/index.js
